@@ -1,0 +1,9 @@
+{
+  "$schema": "./dfx.schema.json",
+  "canisters": {
+    "frontend": {
+      "source": ["./dist"],
+      "type": "assets"
+    }
+  }
+}
