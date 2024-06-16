@@ -1,13 +1,13 @@
 {
-  "name": "razzle",
-  "private": true,
+  "name": "past3-frontend",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite",
     "build": "tsc && vite build",
     "format": "prettier --write ./src",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "start": "vite"
   },
   "dependencies": {
     "@eslint/js": "^9.5.0",
