@@ -1,7 +1,4 @@
 import { Navigation } from "@/components/Navigation/Navigation"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
 import { createLazyFileRoute } from "@tanstack/react-router"
 
 export const Route = createLazyFileRoute("/bins")({

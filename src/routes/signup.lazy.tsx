@@ -16,7 +16,7 @@ export const Route = createLazyFileRoute("/signup")({
 
 export function SignUp() {
   return (
-    <div className="min-h-screen grid place-content-center">
+    <div className="grid min-h-screen place-content-center">
       <Card className="max-w-sm">
         <CardHeader>
           <CardTitle className="text-xl">Sign Up</CardTitle>
