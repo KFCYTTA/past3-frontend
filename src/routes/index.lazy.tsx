@@ -3,10 +3,16 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { createLazyFileRoute } from "@tanstack/react-router"
+import { EditorProvider } from "@tiptap/react"
+import StarterKit from "@tiptap/starter-kit"
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
 })
+
+const extensions = [StarterKit]
+
+const content = "# Hello, World!"
 
 function Index() {
   return (
@@ -28,6 +34,13 @@ function Index() {
             <Switch id="switch-preview" />
             <Label htmlFor="switch-preview">Preview</Label>
           </div>
+        </div>
+
+        <div>
+          <EditorProvider
+            extensions={extensions}
+            content={content}
+          ></EditorProvider>
         </div>
       </div>
     </div>
